@@ -16,7 +16,7 @@ html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-ser
 .clear {clear: both;}
 
 p {
-	font-size: .9em;
+	font-size: .9m;
 	line-height: 1.4em;
 	margin-bottom: 20px;
 	color: #444;
@@ -152,7 +152,7 @@ section:last-child {
 
 .sectionContent h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	font-weight: bold;
 	margin-bottom: -2px;
 
@@ -160,7 +160,7 @@ section:last-child {
 
 .sectionContent h3 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.25em;
+	font-size: 1em;
 	font-weight: bold;
 	margin-bottom:-2px;
 }
