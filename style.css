@@ -16,21 +16,21 @@ html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-ser
 .clear {clear: both;}
 
 p {
-	font-size: .9m;
+	font-size: .95em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
 	color: #444;
 }
 
 ul {
-	font-size: .9em;
+	font-size: .95em;
 	line-height:1.4em;
 	color: #444;
 	vertical-align: baseline;
 }
 
 li {
-	font-size: .9em;
+	font-size: .95em;
 	line-height: 1.4em;
 	color: #444;
 	vertical-align: baseline;
@@ -142,6 +142,10 @@ section:last-child {
 	float: right;
 	width: 72.5%;
 	padding: 0;
+}
+
+.sectionContent .skillType {
+	float:right;
 }
 
 .sectionTitle h1 {
