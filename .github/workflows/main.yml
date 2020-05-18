@@ -11,8 +11,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-      - name: Build static site
-        run : yarn install && npm run-script build
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./dist/ s3://brian-burke-resume.s3-website.us-east-2.amazonaws.com --delete
-        
+        run: aws s3 sync build/ s3://brian-burke-resume --delete --cache-control max-age=60
+        run: aws cloudfront create-invalidation --distribution-id E2A67OM6V97VSJ --paths "/*"
+
