@@ -12,4 +12,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./dist/ s3://brian-burke-resume.s3.amazonaws.com
+        run: aws s3 sync bjburke002/Resume/ s3://brian-burke-resume.s3.amazonaws.com
