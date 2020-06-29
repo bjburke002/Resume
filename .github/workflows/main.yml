@@ -12,7 +12,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync . s3://brian-burke-resume --delete --cache-control max-age=60
+        run: aws s3 sync . s3://brian-burke-resume --delete --cache-control max-age=30000
       - name: Invalidate CloudFront distribution
         run: aws cloudfront create-invalidation --distribution-id E2A67OM6V97VSJ --paths "/*"
 
