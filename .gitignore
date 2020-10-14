@@ -89,6 +89,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 .terraform/
-/.env
-/.gitattributes
-/.gitignore
+.env
+.gitattributes
+.gitignore
