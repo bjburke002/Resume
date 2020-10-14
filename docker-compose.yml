@@ -11,6 +11,15 @@ services:
         volumes:
             - .:/app
         working_dir: /app
+    jenkins:
+        build:
+            context: .
+            dockerfile: jenkins.dockerfile
+        ports:
+            - 8080:8080
+        volumes:
+            - $PWD/jenkins_home:/var/jenkins_home
+            - $PWD:/app
     terraform:
         build:
             context: .
@@ -27,4 +36,4 @@ services:
         build:
             context: .
         ports:
-            - 8080:8080
+            - 80:80

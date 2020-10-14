@@ -92,3 +92,6 @@ iOSInjectionProject/
 .env
 .gitattributes
 .gitignore
+.DS_Store
+jenkins_home/
+plugins.txt
