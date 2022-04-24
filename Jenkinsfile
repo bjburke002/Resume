@@ -20,6 +20,11 @@ pipeline {
                 sh "scripts/deploy_website.sh"
             }
         }
+        stage ('Completion'){
+            steps{
+                sh "echo 'Build complete.'"
+            }
+        }
     
     }
 }
