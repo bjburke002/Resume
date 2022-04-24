@@ -16,7 +16,7 @@ pipeline {
         }
         stage ('Deploy') {
             steps {
-                sh "chmod -R 777 scripts/deploy.sh"
+                sh "chmod -R 777 scripts/deploy_website.sh"
                 sh "scripts/deploy_website.sh"
             }
         }
