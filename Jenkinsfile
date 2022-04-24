@@ -4,17 +4,20 @@ pipeline {
     stages {
         stage ('Build') {
             steps{
-                bash "scripts/build.sh"
+                sh "chmod -R 777 scripts/build.sh"
+                sh "scripts/build.sh"
             }
         }
         stage ('Test') {
             steps{
-                bash "scripts/unit_tests.sh"
+                sh "chmod -R 777 scripts/unit_tests.sh"
+                sh "scripts/unit_tests.sh"
             }
         }
         stage ('Deploy') {
             steps {
-                bash "scripts/deploy.sh"
+                sh "chmod -R 777 scripts/deploy.sh"
+                sh "scripts/deploy_website.sh"
             }
         }
     
